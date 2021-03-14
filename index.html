@@ -9,20 +9,21 @@
 </head>
 <body>
     <header>
-        <h1>יזכור</h1>
         <nav>
+            <h1 class='logo'>1939 - 18.11.2020</h1>
             <ul class='nav-links'>
                 <li><a href="#">שאלות</a></li>
-                <li><a href="#">צרו קשר</a></li>
-                <li><a href="#">קישור לאתר</a></li>
-                <li><a href="#">יזכור</a></li>
-                <li><a href="#">תמונות</a></li>
-                <li><a href="#">הסיפור שלי</a></li>
+                <li><a href="#con">צרו קשר</a></li>
+                <li><a href="#qr">קישור לאתר</a></li>
+                <li><a href="#remember">יזכור</a></li>
+                <li><a href="#mySong">השיר שלי</a></li>
+                <li><a href="#myPhotos">תמונות</a></li>
+                <li><a href="#aboutMe">הסיפור שלי</a></li>
             </ul>
         </nav>
     </header>
-    <section class='about-me'>
-        <h1>הסיפור שלי</h1>
+    <section class='about-me' id='aboutMe'>
+        <h1 class='section-title'>הסיפור שלי</h1>
         <div class='stories'>
             <img src='./assets/img/aboutme-img.jfif'/>
             <div class='back-square'>
@@ -32,10 +33,55 @@
             </div>
         </div>
     </section>
-    <section class='my-photos'>
-        <h1>התמונות שלי</h1>
+    <section class='my-photos' id='myPhotos'>
+        <h1 class ='section-title'>תמונות</h1>
+        <div class='img-area'>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/1.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/2.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/3.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/4.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/5.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/6.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/7.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/8.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/9.jpeg')"></div>
+            <div class='single-img'  style="background-image: url('./assets/img/gallary/10.jpeg')"></div>
+        </div>
     </section>
+    <section class='my-song' id='mySong'>
+        <iframe id='song-video' src="https://www.youtube.com/embed/Grn7v224_HI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+    </section>
+    <section id='contactMe'>
+        <h1 id='con'class ='section-title'>צרו קשר</h1>
+        <div class="contact-from">
+            
+        </div>
+    </section>
+    <footer class='qr-section'>
+        <table>
+            <tr>
+                <td><h2>קוד לאתר</h2></td>.
+                <td class='table-space'></td>
+                <td><h2>הדלקת נר זיכרון</h2></td>
+            </tr>
+            <tr>
+                <td> 
+                     <div id='qr'></div>
+                </td>
+                <td class = 'table-space'></td>
+                <td>
+                    <div class='info'>
+                        <div id='remember'></div>
+                        <h2 id='numberOfLikes'></h2>
+                    </div>
+                </td>
+
+            </tr>
+        </table>        
+    </footer>
+
     <script src='index.js'></script>
+    
 
 </body>
 </html>
