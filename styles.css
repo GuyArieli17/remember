@@ -8,26 +8,41 @@
     margin:                 0;
     padding:                0;
 }
+
 body{
-    background-color:     #edf2f4;
-    color:                #24252a;
+    background-color:       #edf2f4;
+    color:                  #24252a;
+    overflow-x: hidden;
+
 }
+
+.logo{
+    color:                  #fcbe4d;
+    font-size:              30px;  
+    margin-left:            -10%;
+}
+
 
 li, a{
     font-family:            "Heebo";
     font-weight:            300;
     font-size:              16px;
-    color:                #edf0f1;
+    color:                  #edf0f1;
     text-decoration:        none;
 }
 
-header{
+nav{
+    width:                  100%;
+    z-index:                150;
+    position:               fixed;
     display:                flex;
     justify-content:        space-between;
     align-items:            center;
     padding:                30px 10%;
-    background-color:     #24252a;
+    background-color:       #24252a;
+    border-bottom:          2px solid #ca8d1a;
 }
+
 
 .logo{
     cursor:                 pointer;
@@ -47,7 +62,7 @@ header{
 }
 
 .nav-links li a:hover{
-    color:                #fcbe4d;
+    color:                  #fcbe4d;
 }
 
 .hero{
@@ -58,23 +73,32 @@ header{
 }
 
 section{
-    height:                 100%;
+    height:                 95vh;
+    min-height:             50vh;
     display:                block;
     position:               relative;
 }
 
-.about-me h1{
+.section-title{
     margin-right:           5vw;;
-    margin-top:             2vh;
+    padding-top:             2vh;
+    margin-bottom:          2vh;
     text-align:             right;
     font-size:              40px;
+
+}
+
+.about-me{
+    padding-top:            10vh;
+    height:                 100vh;
 }
 
 .about-me img{
+    z-index:                5;
     position:               absolute;
     width:                  22vw;
     height:                 auto;
-    margin:                 11vh 15vw;
+    margin:                 10vh 15vw;
     border:                 3px solid #edf2f4;
 }
 
@@ -86,7 +110,7 @@ section{
     text-align:             right;
     z-index:                -1;
     position:               absolute;
-    background-color:     #fcbe4d;
+    background-color:       #fcbe4d;
     width:                  60vw;
     height:                 65vh;
     margin-left:            30vw;
@@ -96,6 +120,8 @@ section{
     font-family:            "Heebo";
     font-weight:            900;
     font-size:              50px;
+    transition:             all 0.3s ease 0s;
+
 }
 
 .upper-quote{
@@ -113,12 +139,144 @@ section{
     font-weight:            400;
     font-size:              22px;
     line-height:            2;
+    transition:             all 0.3s ease 0s;
 
 }
 
 
+
 .my-photos{
-    margin-top:             100vh;    
-    height: 100vh;
-    background-color: red;
+    background-color:       #24252a;
+    height:                 100vh;  
+    min-height:             50vw;
+    padding-top:            1vh;
+}
+
+.my-photos h1{
+    color:                  #fcbe4d;
+    padding-bottom:         2vh;
+}
+
+
+.img-area{
+    display:                flex;
+    flex-wrap:              wrap;
+    flex-direction:         row;
+    align-items:            center;
+    justify-content:        center;
+}
+
+.single-img{
+    margin:                 6px;
+    width:                  19vw;
+    height:                 19vw;
+    background-repeat:      no-repeat;
+    background-position:    center;
+    background-size:        cover;
+    opacity:                1;
+    transition:             all .5s ease 0s;
+
+}
+
+.single-img:hover{
+    opacity:                .5;
+}
+
+
+.my-song{
+    /* padding:                5vh 0; */
+    align-items:            center;
+    justify-content:        center;
+    height:                 100vh;
+    width:                  100vw;
+    background-color:       #fcbe4d;
+}
+
+#song-video{
+    height:                 100vh;
+    width:                  100vw;
+}
+
+
+
+#contactMe{
+    height:                 80vh;
+    background-color:       #fcbe4d;
+}
+
+.contact-from{
+    position: relative;
+    background-color:       #edf0f1;
+    margin-top:             3vh;
+    padding-bottom:         5vh;
+    height:                 60vh;
+    width:                  80vw;
+    left:                   10vw;
+}
+
+
+
+
+footer h2{
+    color:                  #fcbe4d;
+    text-align:             center;
+    font-family:            "Heebo";  
+    font-weight:            400;
+    font-size:              25px;
+    padding-top:            2vh;
+    padding-bottom:         3vh;
+}
+
+
+
+#remember{
+    z-index:                10;
+    background-image:       url('./assets/img/transpernt_candle.png');
+    width:                  10vw;
+    height:                 10vw;
+    margin-left:            0vw;
+    margin-top:             0vh;
+    background-repeat:      no-repeat;
+    background-position:    center;
+    background-size:        cover;
+    cursor:                 pointer;
+    
+}
+
+.qr-section{
+    background-color:       #24252a;
+    display:                flex;
+    flex-wrap:              wrap;
+    flex-direction:         row;
+    align-items:            center;
+    justify-content:        center;
+    width:                  100vw;
+    padding-left:           5vw;
+    padding-right:          5vw;    
+    height:                 35vh;
+    min-height:             20vw;
+
+}
+
+#qr{
+    background-image:       url('./assets/QR.png');
+    width:                  10vw;
+    height:                 10vw;
+    background-repeat:      no-repeat;
+    background-position:    center;
+    background-size:        cover;
+}
+
+#numberOfLikes{
+    color:                  #edf0f1;
+    text-align:             center;
+    font-family:            "Heebo";
+    font-weight:            400;
+    font-size:              22px;
+    margin-top:             -5vh;
+    margin-right:            1.5vw;
+}
+
+td{
+    width: 10vw;
 }
